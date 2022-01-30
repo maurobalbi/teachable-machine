@@ -53,12 +53,12 @@ const wizard = new tm.Wizard({
   },
   onTrain: () => console.log("train begins"),
   onReady: () => {
-    const inferenceCamera = wizard.createInferenceCamera({
-      size: 270
-    });
-    const cameraContainer = document.querySelector('#inference-camera-container');
-    cameraContainer.appendChild(inferenceCamera);
-    mainEl.classList.add('ready');
+    // const inferenceCamera = wizard.createInferenceCamera({
+    //   size: 270
+    // });
+    // const cameraContainer = document.querySelector('#inference-camera-container');
+    // cameraContainer.appendChild(inferenceCamera);
+    // mainEl.classList.add('ready');
   }
 });
 
