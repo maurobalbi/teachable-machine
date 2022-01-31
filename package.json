@@ -3,6 +3,6 @@
         "http-server": "^0.11.1"
     },
     "scripts": {
-        "start": "http-server --cors"
+        "start": "http-server ./src --cors"
     }
 }

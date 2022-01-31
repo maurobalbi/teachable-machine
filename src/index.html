@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/cdn/tf.min.js"></script>
+    <script
+        src="/teachablemachine.min.js"
+        type="text/javascript"
+      ></script>
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <main id="container">
+      <header id="intro" class="flex-section">
+        <h1>
+          TeachableMachine.js Example: Hand Up/ Down
+        </h1>
+        <p id="intro-copy" class="copy">
+          This demo shows how you can bring machine learning to your web creation with just a few lines of code. Here, you'll teach a character to raise its hand when you do.
+          Remix it to make your own project.
+        </p>
+      </header>
+      <div id="images" class="flex-section">
+        <!-- <img id="intro-image" src="https://cdn.glitch.com/28df51be-a811-4347-84fb-0ff887a9aade%2FWelcome_tmjs.gif?v=1588351905678" alt="User waving their hand paired with a gif of a character raising their hand"/> -->
+        <div id="prediction-section">
+          <!-- <div id="inference-camera-container">
+            
+          </div> -->
+            <!-- <img class="prediction-image" src="https://cdn.glitch.com/28df51be-a811-4347-84fb-0ff887a9aade%2Fhandup_bw.gif?v=1588274465551" alt="Hand Up!"/>
+            <img class="prediction-image hidden" src="https://cdn.glitch.com/28df51be-a811-4347-84fb-0ff887a9aade%2Fhanddown_bw.gif?v=1588274468719" alt="Hand Down"/>
+            <img class="prediction-image hidden" src="https://cdn.glitch.com/28df51be-a811-4347-84fb-0ff887a9aade%2Fhanddown_bw.gif?v=1588274468719" alt="Hand Down"/> -->
+        </div>
+      </div>
+      <div id="buttons" class="flex-section">
+         <tm-button id="train-model-button" label="Train Model"></tm-button>
+      </div>
+    </main>
+  </body>
+</html>
