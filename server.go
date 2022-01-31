@@ -2,11 +2,9 @@ package main
 
 import (
 	"embed"
-	"flag"
 	"io/fs"
 	"log"
 	"net/http"
-	"os/exec"
 )
 
 //go:embed src
@@ -16,9 +14,8 @@ func server(finished chan bool) {
 	subFS, _ := fs.Sub(src, "src")
 
 	http.Handle("/", http.FileServer(http.FS(subFS)))
-	port := flag.String("p", "8100", "port to serve on")
-	log.Printf("Serving on HTTP port: %s\n", *port)
-	err := http.ListenAndServe(":"+*port, nil)
+	log.Printf("Bitte gebe im Browser (Chrome) folgende Adresse ein: http://localhost:8100\n")
+	err := http.ListenAndServe(":8100", nil)
 
 	log.Printf(err.Error())
 
@@ -32,8 +29,6 @@ func main() {
 
 	const url = "http://localhost:8100"
 
-	_ = exec.Command("xdg-open", url).Start()
-	log.Printf("Opening Browser")
 	<-errored
-	log.Printf("Closing")
+	log.Printf("Server wird geschlossen")
 }
