@@ -1,5 +1,4 @@
 name: Publish to gh-pages
-
 on:
   push:
     branches:
