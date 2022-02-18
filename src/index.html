@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta http-equiv='cache-control' content='no-cache, no-store, must-revalidate'> 
-  <meta http-equiv='expires' content='0'> 
+  <meta http-equiv='cache-control' content='no-cache, no-store, must-revalidate'>
+  <meta http-equiv='expires' content='0'>
   <meta http-equiv='pragma' content='no-cache'>
 
   <link href="https://fonts.googleapis.com/css?family=Poppins:500,700&display=swap" rel="stylesheet">
@@ -21,32 +21,30 @@
 
 <body>
   <main id="container">
-    <header id="intro" class="flex-section">
+
+    <div id="logo_auto">
+      <div id="logo" style="width: 250px; height: 250px"></div>
+      <div id="auto" style="width: 500px; height: 300px"></div>
+    </div>
+    <div class="content">
       <h1>
-        Smart Mobility: Kann eine KI Schilder erkennen?
+        Smart Mobility:<br/> Kann eine KI Schilder erkennen?
       </h1>
       <p id="intro-copy" class="copy">
         Lass uns eine KI trainieren, welche unterschiedliche Verkehrsschilder erkennen kann. Diese KI könnte
         z.B. in selbstfahrenden Autos eingesetzt werden.
         <br />
         <br />
-        Glaubst Du, dass es funktioniert? Probieren geht über studieren...
+        Glaubst Du, dass es funktioniert?<br/> Probieren geht über studieren...
       </p>
-    </header>
-    <div id="images" class="flex-section">
-      <!-- <img id="intro-image" src="https://cdn.glitch.com/28df51be-a811-4347-84fb-0ff887a9aade%2FWelcome_tmjs.gif?v=1588351905678" alt="User waving their hand paired with a gif of a character raising their hand"/> -->
-      <div id="prediction-section">
-        <!-- <div id="inference-camera-container">
-            
-          </div> -->
-        <!-- <img class="prediction-image" src="https://cdn.glitch.com/28df51be-a811-4347-84fb-0ff887a9aade%2Fhandup_bw.gif?v=1588274465551" alt="Hand Up!"/>
-            <img class="prediction-image hidden" src="https://cdn.glitch.com/28df51be-a811-4347-84fb-0ff887a9aade%2Fhanddown_bw.gif?v=1588274468719" alt="Hand Down"/>
-            <img class="prediction-image hidden" src="https://cdn.glitch.com/28df51be-a811-4347-84fb-0ff887a9aade%2Fhanddown_bw.gif?v=1588274468719" alt="Hand Down"/> -->
+
+      <div id="buttons" class="flex-section">
+        <div id="train-model-button"></div>
+        <!-- <tm-button id="train-model-button" label="Modell trainieren"></tm-button> -->
       </div>
     </div>
-    <div id="buttons" class="flex-section">
-      <tm-button id="train-model-button" label="Modell trainieren"></tm-button>
     </div>
+    <div style="height: 40vh;"></div>
   </main>
 </body>
 

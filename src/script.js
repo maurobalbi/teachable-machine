@@ -5,7 +5,7 @@ const mainEl = document.querySelector('#container');
 const wizard = new tm.Wizard({
   introduction: {
     title: tm.html`Künstliche Intelligenz lernt wie ein Mensch`,
-    description: tm.html`Damit das Modell lernen kann, muss es mit Beispielen gefüttert werden. `
+    description: tm.html`Hier kann die Aufgabenstellung definiert werden.`
   },
   classes: [
     {
