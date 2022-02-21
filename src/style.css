@@ -27,7 +27,7 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 #container {
-  background-image: url("/assets/Background.jpg");
+  background-image: url("./assets/Background.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -150,14 +150,14 @@ h1 {
 
 #auto {
   margin: 0px 50px;
-  background-image: url("/assets/Auto.svg");
+  background-image: url("./assets/Auto.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 #logo {
   margin: 0px 50px;
-  background-image: url("/assets/Logo.svg");
+  background-image: url("./assets/Logo.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -189,7 +189,7 @@ h1 {
 }
 
 #train-model-button {
-  background-image: url("/assets/Button_los.svg");
+  background-image: url("./assets/Button_los.svg");
   height: 100px;
   width: 300px;
   background-repeat: no-repeat;
