@@ -62,16 +62,18 @@ h1 {
 }
 
 .content h1 {
-  font-size: 48px;
+  font-size: 32px;
   margin-bottom: 0px;
 }
+
 
 #intro-copy {
   margin-top: 50px;
   padding-bottom: 20px;
-  font-size: 24px;
+  font-size: 20px;
   color: #555;
 }
+
 
 #images.flex-section {
   display: flex;
