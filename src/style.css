@@ -31,10 +31,10 @@ button, input[type="submit"], input[type="reset"] {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height:fit-content;
+  min-height:100vh;
   /*justify-items: center;*/
   align-items: center;
-  justify-content: space-between; /*space-evenly;*/
 }
 /*.flex-section {
   flex-grow: 1;
@@ -56,7 +56,7 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 32px;
   color: black;
   font-weight: 700;
 }
@@ -68,12 +68,30 @@ h1 {
 
 
 #intro-copy {
-  margin-top: 50px;
+  max-width:1280px;
+  margin-top: 24px;
   padding-bottom: 20px;
-  font-size: 20px;
-  color: #555;
+  font-size: 22px;
+  color: #222;
 }
 
+#intro-copy ol {
+  text-align: start;  
+}
+
+#intro-copy ol li {
+  padding-bottom: 7px;
+}
+
+#reset-arrow {
+  display: inline-block;
+  background-image: url('./assets/Button_soft_reset.svg');
+  background-size: contain;
+  width:32px;
+  height:32px;
+  background-repeat:no-repeat;
+  transform: translateY(8px);
+}
 
 #images.flex-section {
   display: flex;
@@ -184,6 +202,7 @@ h1 {
 }*/
 
 .content {
+  transform: translateY(-100px);
   width: 75%;
   display: flex;
   flex-direction: column;

@@ -9,23 +9,20 @@ const wizard = new tm.Wizard({
   },
   classes: [
     {
-      name: "Tempo 60",
-      title: "Training: Zulässige Höchstgeschwindigkeit",
-      description:
-        `Zeige dem Modell das Schild mit der Geschwindigkeitsbegrenzung und halte die "Aufnehmen"-Taste gedrückt (mindestens 20 Bilder)`
+      name: "Gefahrzeichen",
+      title: "Training: Gefahrzeichen",
+      description:tm.html`<ol style='padding:16px'><li>10 Gefahrzeichen aus der Box nehmen.</li><li>Aufnahmetaste gedrückt halten und ca. 20 Aufnahmen pro Schild machen.</li><li>Nach ca. 200 Aufnahmen auf „Weiter“ klicken.</li></ol>`
     },
     {
-      name: "Vorfahrt gewähren",
-      title: "Training: Vorfahrt gewähren",
-      description:
-        `Zeige dem Modell das Schild "Vorfahrt gewähren" und halte erneut die "Aufnehmen"-Taste gedrückt (mindestens 20 Bilder)`
+      name: "Vorschriftzeichen",
+      title: "Training: Vorschriftzeichen",
+      description:tm.html`<ol style='padding:16px'><li>10 Vorschriftzeichen aus der Box nehmen.</li><li>Aufnahmetaste gedrückt halten und ca. 20 Aufnahmen pro Schild machen.</li><li>Nach ca. 200 Aufnahmen auf „Weiter“ klicken.</li></ol>`
     },
     {
-      name: "STOP",
-      title: "Training: Stoppschild",
-      description:
-        `Zeige dem Modell das Schild "Vorfahrt gewähren" und halte wieder die "Aufnehmen"-Taste gedrückt (mindestens 20 Bilder)`
-    }
+      name: "Richtzeichen",
+      title: "Training: Richtzeichen",
+      description:tm.html`<ol style='padding:16px'><li>10 Richtzeichen aus der Box nehmen.</li><li>Aufnahmetaste gedrückt halten und ca. 20 Aufnahmen pro Schild machen.</li><li>Nach ca. 200 Aufnahmen auf „Weiter“ klicken.</li></ol>`
+    },
   ],
   onLoad: () => {
     console.log("model has loaded");
