@@ -11,17 +11,17 @@ const wizard = new tm.Wizard({
     {
       name: "Gefahrzeichen",
       title: "Training: Gefahrzeichen",
-      description:tm.html`<ol style='padding:16px'><li>10 Gefahrzeichen aus der Box nehmen.</li><li>Aufnahmetaste gedrückt halten und ca. 20 Aufnahmen pro Schild machen.</li><li>Nach ca. 200 Aufnahmen auf „Weiter“ klicken.</li></ol>`
+      description:tm.html`<ol style='padding:16px;font-size:22px'><li style='padding-bottom:8px'>10 Gefahrzeichen aus der Box nehmen.</li><li style='padding-bottom:8px'>Aufnahmetaste gedrückt halten und ca. 20 Aufnahmen pro Schild machen.</li><li>Nach ca. 200 Aufnahmen auf „Weiter“ klicken.</li></ol>`
     },
     {
       name: "Vorschriftzeichen",
       title: "Training: Vorschriftzeichen",
-      description:tm.html`<ol style='padding:16px'><li>10 Vorschriftzeichen aus der Box nehmen.</li><li>Aufnahmetaste gedrückt halten und ca. 20 Aufnahmen pro Schild machen.</li><li>Nach ca. 200 Aufnahmen auf „Weiter“ klicken.</li></ol>`
+      description:tm.html`<ol style='padding:16px;font-size:22px'><li style='padding-bottom:8px'>10 Vorschriftzeichen aus der Box nehmen.</li><li style='padding-bottom:8px'>Aufnahmetaste gedrückt halten und ca. 20 Aufnahmen pro Schild machen.</li><li>Nach ca. 200 Aufnahmen auf „Weiter“ klicken.</li></ol>`
     },
     {
       name: "Richtzeichen",
       title: "Training: Richtzeichen",
-      description:tm.html`<ol style='padding:16px'><li>10 Richtzeichen aus der Box nehmen.</li><li>Aufnahmetaste gedrückt halten und ca. 20 Aufnahmen pro Schild machen.</li><li>Nach ca. 200 Aufnahmen auf „Weiter“ klicken.</li></ol>`
+      description:tm.html`<ol style='padding:16px;font-size:22px'><li style='padding-bottom:8px'>10 Richtzeichen aus der Box nehmen.</li><li style='padding-bottom:8px'>Aufnahmetaste gedrückt halten und ca. 20 Aufnahmen pro Schild machen.</li><li>Nach ca. 200 Aufnahmen auf „Weiter“ klicken.</li></ol>`
     },
   ],
   onLoad: () => {
@@ -46,7 +46,7 @@ const wizard = new tm.Wizard({
     });
   },
   onSampleAdded: added => {
-    console.log(added);
+    // console.log(added);
   },
   onTrain: () => console.log("train begins"),
   onReady: () => {
