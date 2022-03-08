@@ -1,5 +1,7 @@
 /* global tm */
 
+document.body.addEventListener('contextmenu', event => event.preventDefault());
+
 const mainEl = document.querySelector('#container');
 
 const wizard = new tm.Wizard({
