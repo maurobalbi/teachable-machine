@@ -10,6 +10,11 @@ go run .
 go build
 ```
 
+Windows
+```
+GOOS=windows go build
+```
+
 # Dev
 
 ```
